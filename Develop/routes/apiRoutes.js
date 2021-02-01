@@ -7,7 +7,7 @@ module.exports = function(app) {
     // apiRoute GET request logic - user request from a button click/s
     // handle the notes.html page and read into it the db.json stored file
     app.get('/api/notes', function(req, res){
-      fs.readFile('./db/db.json', function(req, res){
+      fs.readFile('./db/db.json', (err, data) => {
         if (err) throw err;
         dbData = JSON.parse(data);
         res.send(dbData);
