@@ -29,8 +29,8 @@ app.use(express.static('public'));
 // Assign testing functionality to the server, can I see the string of streaming turtles
 // var server = http.createServer(temp);  // used for testing intially for localhost
 // routes to the files we want to serve when user clicks on buttons or visits a link
-require('./Develop/routes/apiroutes.js')(app);
-require('./Develop/routes/htmlroutes.js')(app);
+require('./Develop/routes/apiRoutes.js')(app);
+require('./Develop/routes/htmlRoutes.js')(app);
 
 
 
