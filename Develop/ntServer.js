@@ -3,7 +3,7 @@
 
 
 // Dependencies - require npm packages
-var http = require("http");
+// var http = require("http");
 const express = require('express');
 
 
@@ -15,12 +15,19 @@ const PORT = process.env.PORT || 3001; //  allows web server to start with a dyn
 // const PORT = 3001;
 
 // Testing functionality to get content into the server before loading given html files
-function temp(request, response){
-  response.end("Hi Straming Turtles, you got here with one function, it works, you made it to " + request.url);
-}
+// function temp(request, response){  // used for testing intially for localhost
+//   response.end("Hi Straming Turtles, you got here with one function, it works, you made it to " + request.url);
+// }
+
+// parse out the input data
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
+
 
 // Assign testing functionality to the server, can I see the string of streaming turtles
-var server = http.createServer(temp);
+// var server = http.createServer(temp);  // used for testing intially for localhost
 // routes to the files we want to serve when user clicks on buttons or visits a link
 require('./routes/apiroutes')(app);
 require('./routes/htmlroutes')(app);
