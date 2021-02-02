@@ -10,7 +10,7 @@ const express = require('express');
 // Assign server port for application to run through on localhost
 // use Express framework for heroku
 const app = express();  // instantiate an express server
-const PORT = process.env.PORT || 3001; //  allows web server to start with a dynamic port
+const PORT = process.env.PORT || 3002; //  allows web server to start with a dynamic port
 // to run on localhost or eventually on heroku
 // const PORT = 3001;
 
@@ -29,8 +29,8 @@ app.use(express.static('public'));
 // Assign testing functionality to the server, can I see the string of streaming turtles
 // var server = http.createServer(temp);  // used for testing intially for localhost
 // routes to the files we want to serve when user clicks on buttons or visits a link
-require('./Develop/routes/apiRoutes.js')(app);
-require('./Develop/routes/htmlRoutes.js')(app);
+require('./routes/apiRoutes.js')(app);
+require('./routes/htmlRoutes.js')(app);
 
 
 
