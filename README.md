@@ -14,23 +14,19 @@
   - [my-email-for-questions-and-information](#my-email-for-questions-and-information)
 
 
-  &nbsp;
   - - -
   ## Screenshot of App running on Heroku, click Get Started to run:
   ![Screenshot](./note-taker-pic-1.png)
 
-    &nbsp;
   - - -
   ## Screenshot of App running on Heroku, showing the current notes stored, and adding a new note to store after clicking the save icon:
   ![Screenshot](./note-taker-pic-2.png)
 
-    &nbsp;
   - - -
   ## Screenshot of App running on Heroku, shows the new note stored along with the previous stored notes:
   ![Screenshot](./note-taker-pic-3.png)
 
-    &nbsp;
-  - - -
+    - - -
   ## Screenshot of App running on localhost, showing JSON storage object:
   ![Screenshot](./note-taker-pic-4.png)
 
