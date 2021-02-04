@@ -9,7 +9,7 @@
   - [Testing Instructions](#testing-instructions)
   - [License Type](#license-type)
   - [Github Repo Link](#github-repo-link)
-  - [HEROKU Application Live Link](#https://mighty-badlands-31851.herokuapp.com/)
+  - [HEROKU Application Live Link](https://mighty-badlands-31851.herokuapp.com/)
   - [Github Information](#github-information)
   - [my-email-for-questions-and-information](#my-email-for-questions-and-information)
 
